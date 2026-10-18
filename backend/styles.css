@@ -1,0 +1,51 @@
+* { box-sizing: border-box; }
+body { margin: 0; background: #f6f7f4; color: #252923; font-family: Arial, sans-serif; }
+button, input, textarea { font: inherit; }
+button { cursor: pointer; }
+button:disabled { cursor: wait; opacity: .65; }
+.simple-page { width: min(820px, 100% - 40px); min-height: 100vh; margin: 0 auto; }
+.auth-page { display: grid; place-items: center; }
+.auth-card { width: min(390px, 100%); padding: 32px; border: 1px solid #e2e5df; border-radius: 10px; background: #fff; }
+.logo { color: #2f4d38; font-size: 19px; font-weight: 700; letter-spacing: -.6px; }
+.logo span { color: #82a181; }
+.auth-card h1 { margin: 32px 0 7px; font-size: 25px; }
+.muted { color: #7b8278; font-size: 13px; line-height: 1.5; }
+.stack-form { display: grid; gap: 15px; margin-top: 24px; }
+.stack-form label { display: grid; gap: 7px; color: #51584e; font-size: 12px; font-weight: 600; }
+.stack-form input, .question-form textarea { width: 100%; padding: 11px 12px; border: 1px solid #dfe4db; border-radius: 6px; color: #252923; background: #fff; outline-color: #779778; }
+.field-hint { margin: -10px 0 0; color: #848b80; font-size: 11px; }
+.primary-button { padding: 10px 15px; border: 0; border-radius: 6px; color: #fff; background: #456c4d; font-size: 13px; font-weight: 600; }
+.primary-button:hover:not(:disabled) { background: #355b3d; }
+.switch-mode { margin: 20px 0 0; color: #71786e; font-size: 12px; }
+.switch-mode button { padding: 0; border: 0; color: #416a49; background: transparent; font-weight: 600; }
+.error-message { padding: 10px 12px; border-radius: 6px; color: #8b4038; background: #fff0ed; font-size: 12px; line-height: 1.5; }
+.simple-header { display: flex; justify-content: space-between; align-items: center; padding: 22px 0; border-bottom: 1px solid #e2e5df; }
+.account { display: flex; align-items: center; gap: 14px; color: #747b71; font-size: 12px; }
+.account button { padding: 7px 10px; border: 1px solid #dfe4db; border-radius: 5px; color: #555d52; background: #fff; font-size: 11px; }
+.main-column { max-width: 720px; margin: 48px auto; }
+.main-column > h1 { margin: 0 0 18px; font-size: 25px; letter-spacing: -.6px; }
+.question-form { padding: 12px; border: 1px solid #dfe4db; border-radius: 8px; background: #fff; }
+.question-form textarea { display: block; resize: vertical; border: 0; padding: 4px; line-height: 1.5; }
+.question-form textarea:focus { outline: 0; }
+.question-footer { display: flex; justify-content: space-between; align-items: center; padding-top: 10px; color: #9aa095; font-size: 11px; }
+.history-section { margin-top: 30px; padding-top: 19px; border-top: 1px solid #e2e5df; }
+.history-section h2 { margin: 0 0 12px; font-size: 15px; }
+.history-section ul { display: grid; gap: 5px; margin: 0; padding: 0; list-style: none; }
+.history-item { width: 100%; display: grid; gap: 5px; padding: 10px; border: 1px solid transparent; border-radius: 6px; color: #495045; background: transparent; text-align: left; font-size: 12px; line-height: 1.4; }
+.history-item:hover, .history-item.active { border-color: #e0e6dc; background: #fff; }
+.history-id, .report-id { color: #6d8568; font-size: 10px; font-weight: 600; }
+.saved-report { margin-top: 28px; padding: 22px; border: 1px solid #e1e5df; border-radius: 8px; background: #fff; }
+.saved-report h2 { margin: 8px 0 18px; font-size: 19px; line-height: 1.4; }
+.report-body { color: #454c43; font-size: 13px; line-height: 1.75; }
+.report-body h1, .report-body h2, .report-body h3 { color: #303a30; font-size: 16px; }
+.report-body a { color: #416a49; }
+.saved-report details { margin-top: 22px; padding-top: 13px; border-top: 1px solid #edf0ea; color: #626a60; font-size: 12px; }
+.saved-report summary { cursor: pointer; font-weight: 600; }
+.saved-report details h3 { margin: 16px 0 6px; font-size: 12px; }
+.saved-report pre { max-height: 240px; overflow: auto; white-space: pre-wrap; overflow-wrap: anywhere; color: #626a60; font-family: inherit; font-size: 11px; line-height: 1.6; }
+@media (max-width: 700px) {
+  .simple-page { width: min(100% - 28px, 560px); }
+  .main-column { margin-top: 30px; }
+  .account { gap: 8px; font-size: 10px; }
+  .auth-card { padding: 25px 20px; }
+}
